@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Brick Breaker Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</head>
+<body>
+
+<div id="menu">
+  <h1>Brick Breaker</h1>
+  <label for="difficulty">Select Difficulty:</label>
+  <select id="difficulty">
+    <option value="easy">Easy</option>
+    <option value="medium">Medium</option>
+    <option value="hard">Hard</option>
+  </select>
+  <button id="startButton">Start Game</button>
+  <h2>Leaderboard</h2>
+  <ol id="leaderboard"></ol>
+</div>
+
+<canvas id="gameCanvas" width="800" height="600" style="display:none;"></canvas>
+<audio id="brickHitSound" src="audio/brick hit.mp3" preload="auto"></audio>
+<audio id="paddleHitSound" src="audio/paddle hit.mp3" preload="auto"></audio>
+<audio id="gameOverSound" src="audio/you lose.mp3" preload="auto"></audio>
+
+<div id="nameModal" class="modal">
+    <div class="modal-content">
+        <h2>Game Over!</h2>
+        <p>Your Score: <span id="finalScoreDisplay"></span></p>
+        <p>Enter your name for the leaderboard:</p>
+        <input type="text" id="playerNameInput" maxlength="20">
+        <button onclick="submitScore()">Submit</button>
+    </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #000033;
+  color: white;
+}
+
+#menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 150, 0.7);
+  padding: 30px;
+  border-radius: 15px;
+  min-width: 600px;
+  box-shadow: 0 0 20px rgba(0, 0, 255, 0.5);
+}
+
+canvas {
+  background: #0000aa;
+  display: block;
+  margin: 0 auto;
+  width: 800px;
+  height: 600px;
+  border: 2px solid #333;
+  box-shadow: 0 0 20px rgba(0, 0, 255, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#leaderboard {
+  text-align: left;
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: rgba(0, 0, 100, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+#leaderboard li {
+  margin-bottom: 5px;
+  padding: 3px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+}
+
+select,
+button {
+  background-color: #0000aa;
+  color: white;
+  border: 2px solid #0000ff;
+  font-size: 1.2em;
+  padding: 12px 24px;
+  margin: 15px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+select:hover,
+button:hover {
+  background-color: #0000ff;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+.modal-content {
+  background-color: #000066;
+  margin: 15% auto;
+  padding: 40px;
+  width: 500px;
+  border-radius: 5px;
+  text-align: center;
+  border: 2px solid #0000ff;
+  box-shadow: 0 0 20px rgba(0, 0, 255, 0.5);
+  font-size: 1.2em;
+}
+
+.modal input {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  background-color: #000033;
+  color: white;
+  border: 1px solid #0000ff;
+  border-radius: 3px;
+  font-size: 1.2em;
+}
+
+.modal button {
+  padding: 8px 16px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+h1 {
+  color: #ffff00;
+  text-shadow: 0 0 5px #0000ff;
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #ffff00;
+  text-shadow: 0 0 5px #0000ff;
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+#finalScoreDisplay {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffff00;
+  text-shadow: 0 0 5px #0000ff;
+}
